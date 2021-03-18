@@ -15,7 +15,7 @@ int main()
 	}
 	for (i = 1; i <= n * n; leap++)
 	{
-		if (leap % 4 == 1)
+		if (leap % 4 == 1)//从左往右
 		{
 			for (j = i4; j <= i2; j++, i++)
 			{
@@ -23,7 +23,7 @@ int main()
 			}
 			i1++;
 		}
-		if (leap % 4 == 2)
+		if (leap % 4 == 2)//从上到下
 		{
 			for (j = i1; j <= i3; j++, i++)
 			{
@@ -31,7 +31,7 @@ int main()
 			}
 			i2--;
 		}
-		if (leap % 4 == 3)
+		if (leap % 4 == 3)//从右往左
 		{
 			for (j = i2; j >= i4; j--, i++)
 			{
@@ -39,7 +39,7 @@ int main()
 			}
 			i3--;
 		}
-		if (leap % 4 == 0)
+		if (leap % 4 == 0)//从下到上
 		{
 			for (j = i3; j >= i1; j--, i++)
 			{
